@@ -9,6 +9,7 @@ const AquaSignin = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [success , setSuccess] = useState(false)
 
   const { userLogin } = userServiceOperations();
 
@@ -19,6 +20,7 @@ const AquaSignin = () => {
     } else {
       setLoading(true);
       userLogin({ email: email, password: password }).then((data)=>{
+        setLoading(setInterval(false,5000))
         console.log("user" , data)
       })
     }
