@@ -2,6 +2,7 @@ const express = require("express");
 require("dotenv").config();
 const app = express();
 const morgan = require("morgan");
+const Cors = require("cors");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
 
@@ -9,7 +10,6 @@ const fileUpload = require("express-fileupload");
 const swaggerUi = require("swagger-ui-express");
 const YAML = require("yamljs");
 const swaggerDocument = YAML.load("./swagger.yaml");
-
 
 //custom error middleware for easy front end
 const productionError = require("./middlewares/productionError");
@@ -26,6 +26,9 @@ app.use(
     tempFileDir: "/tmp/",
   })
 );
+
+//Cors
+app.use(Cors());
 
 //temp check
 app.set("view engine", "ejs");
