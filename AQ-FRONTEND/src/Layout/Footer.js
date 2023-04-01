@@ -9,11 +9,15 @@ const AquaFooter = () => {
     <>
       <Card body className="aqua-footer fixed-bottom">
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
+          <div className="col-lg-5 col-md-6 col-xs-6 col-sm-6 text-center">
+            <Button variant="link">
             <FiPhoneCall size={25} />
+            </Button>
           </div>
-          <div className="col-lg-6 col-md-6 col-xs-12 col-sm-12 text-center">
+          <div className="col-lg-5 col-md-6 col-xs-6 col-sm-6 text-center">
+            <Button variant="link">
             <FiInbox size={25} />
+            </Button>      
           </div>
         </div>
         <hr />
@@ -34,7 +38,9 @@ const AquaFooter = () => {
             </div>
           </div>
           <div className="col-md-4 col-lg-4 col-xs-12 col-md-12"></div>
-          <div className="col-md-4 col-lg-4 col-xs-12 col-md-12"></div>
+          <div className="col-md-4 col-lg-4 col-xs-12 col-md-12">
+            
+          </div>
         </div>
         <Card className="bg-primary">
           <Card.Body className="aqua-footer-pad">
