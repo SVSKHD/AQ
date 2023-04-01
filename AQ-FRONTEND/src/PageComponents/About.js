@@ -4,7 +4,12 @@ const AboutComponent = () =>{
 return(
     <>
     <AquaLayout>
-        <h1>About Component</h1>
+        <div className="row">
+            <div className="col-lg-6 col-sm-12 col-xs-12 col- col-md-6"></div>
+            <div className="col-lg-6 col-sm-12 col-xs-12 col- col-md-6"></div>
+            <div className="col-lg-6 col-sm-12 col-xs-12 col- col-md-6"></div>
+            <div className="col-lg-6 col-sm-12 col-xs-12 col- col-md-6"></div>
+        </div>
     </AquaLayout>
     </>
 )
