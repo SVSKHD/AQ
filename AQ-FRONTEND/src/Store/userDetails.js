@@ -6,5 +6,5 @@ export const userStatus = create((set) => ({
   userData: "",
   toggleSingup: () => set((state) => ({ signup: true })),
   toggleUserSinginStatus: () => set({ userSinginStatus: true }),
-  saveUserData: (payload) => set((state) => ({ user: payload })),
+  saveUserData: (payload) => set(() => ({ userData:payload })),
 }));
