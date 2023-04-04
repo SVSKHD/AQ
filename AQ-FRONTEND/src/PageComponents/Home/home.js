@@ -1,11 +1,14 @@
 import AquaProductCard from "../../components/cards/productCard";
 import AquaLayout from "../../Layout/Layout";
+import AquaHomeCarousel from "./AquaHomePageCarousel";
 const AquaHomeComponent = () => {
   return (
     <>
       <AquaLayout>
-        <h1>Hello Home Component</h1>
-        <AquaProductCard/>
+        <AquaHomeCarousel/>
+        <div className="container">
+          <AquaProductCard />
+        </div>
       </AquaLayout>
     </>
   );

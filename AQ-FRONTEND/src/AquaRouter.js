@@ -6,7 +6,7 @@ import AquaShop from "./Pages/ShopIndex"
 import AquaCompare from "./Pages/CompareIndex"
 //not found
 import NotFound from "./Pages/NotFound";
-import ComparePage from "./Pages/CompareIndex";
+
 
 function AquaRouter() {
   let AquaRoutes = [
@@ -33,14 +33,14 @@ function AquaRouter() {
     {
       name:"Compare",
       path:"/compare",
-      component:<ComparePage/>
+      component:<AquaCompare/>
     }
   ];
   return (
     <>
       <Router>
         <Routes>
-          {AquaRoutes.map((r, i) => (
+          {AquaRoutes.map((r) => (
             <Route key={r.name} path={r.path} element={r.component} />
           ))}
         </Routes>
