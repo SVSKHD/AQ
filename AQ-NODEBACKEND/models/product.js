@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { ObjectId } = mongoose.Schema;
 
 const productSchema = new mongoose.Schema({
   name: {
@@ -39,6 +40,10 @@ const productSchema = new mongoose.Schema({
       message:
         "please select category ONLY from - short-sleeves, long-sleeves, sweat-shirts and hoodies ",
     },
+  },
+  categorySpecific: {
+    type: ObjectId,
+    ref: "Category",
   },
   //this field was updated in order videos later
   stock: {
